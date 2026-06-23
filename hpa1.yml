@@ -6,7 +6,7 @@ metadata:
 spec:
   scaleTargetRef:
     kind: Deployment
-    apiVersion: v1
+    apiVersion: apps/v1
     name: apache-deployment
   minReplicas: 1
   maxReplicas: 5
@@ -16,6 +16,6 @@ spec:
         name: cpu
         target:
           type: Utilization
-          averageUtlization: 5
+          averageUtilization: 5
       
 
